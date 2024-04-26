@@ -2,7 +2,7 @@
 [<--- BACK TO MAIN PAGE](../README.md)
 1. [How the uA currents are achieved in RX](#init)
 2. [RX sampling configuration window](#rx_conf)
-3. [Why TX preamble size is important](#multi_rx)
+3. [Why TX preamble size is important](#preamble_desc)
 4. [Multiple Frequency Listening](#multi_rx)
 
 <div id="init"></div>  
