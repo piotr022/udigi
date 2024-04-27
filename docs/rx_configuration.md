@@ -4,6 +4,7 @@
 2. [RX sampling configuration window](#rx_conf)
 3. [Why TX preamble size is important](#preamble_desc)
 4. [Multiple Frequency Listening](#multi_rx)
+5. [Power consumption measurements](#power_measurements)
 
 <div id="init"></div>  
 
@@ -12,6 +13,7 @@
 The uDigi receiver operates in a sampled RX mode - it wakes up for a very short period to check if signal is present. This mode allows to lower an average current lower than the radio chip's declared continuous RX current.
 
 ![Current vs time](./resources/img/current_vs_time.png)  
+![Average rx current](./resources/img/pp_350_rx.png)
 
 Chart above shows how current changes vs time. Here are the main principles for power consumption:
 * The average current depends strictly on the time configured between RX samples.
@@ -53,3 +55,19 @@ While using sampling rx mode, it is possible to listen simultaneously on differe
 You can adjust the ratio of listened frequencies using the **Rx PSC** settings.
 
 ![Multi freq rx](./resources/img/current_vs_time_multi_rx.png)
+
+<div id="power_measurements"></div>  
+
+## Power consumption Measurements
+Measurements was taken with digi settings:
+* **RX interval MAX**  = 350
+* **RX interval MIN**  = 350
+
+Tested under 3.5 V input voltage.
+
+### Sleep current
+![Sleep current](./resources/img/pp_sleep.png)
+
+### Average rx current
+![Average rx current](./resources/img/pp_350_rx.png)
+
