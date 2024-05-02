@@ -1,10 +1,11 @@
 # uDigi docs
 
-1. [Rx configuration](./docs/rx_configuration.md)
-2. [Digipeating configuration](./docs/digi_configuration.md)
-3. [Alarms configuration](./docs/alarms_settings.md)
-4. [Software update](./docs/software_update.md)
-5. [Battery life estimations](./docs/battery_life_estimations.md)
+1. [Connecting to configurator](./docs/udigi_configurator.md)
+2. [Rx configuration](./docs/rx_configuration.md)
+3. [Digipeating configuration](./docs/digi_configuration.md)
+4. [Alarms configuration](./docs/alarms_settings.md)
+5. [Software update](./docs/software_update.md)
+6. [Battery life estimations](./docs/battery_life_estimations.md)
 
 #
 

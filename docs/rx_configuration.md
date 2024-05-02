@@ -3,8 +3,9 @@
 1. [How the uA currents are achieved in RX](#init)
 2. [RX sampling configuration window](#rx_conf)
 3. [Why TX preamble size is important](#preamble_desc)
-4. [Multiple Frequency Listening](#multi_rx)
-5. [Power consumption measurements](#power_measurements)
+4. [How to configure preamle size on your lora tracker](#tracker_cfg)
+5. [Multiple Frequency Listening](#multi_rx)
+6. [Power consumption measurements](#power_measurements)
 
 <div id="init"></div>  
 
@@ -46,6 +47,17 @@ Each packet is preceded by a preamble that allows the receiver to synchronize an
 ### Bad and good configurations
 ![preamble effectiveness](./resources/img/preamble_effectiveness.png)  
 
+<div id="tracker_cfg"></div>  
+
+## How to configure preamle size on your lora tracker
+If your digi is configured to work with long sample interval (good for low power consumption), your tracker device should transmit long enought preamble, to have 100% chance of beeing digipeated. (Explained on the image above).  
+
+[TTGO-T-Beam-LoRa-APRS](https://github.com/dl9sau/TTGO-T-Beam-LoRa-APRS) this software for TTGO trackers and digipeaters allows you to set custom preamble size. 
+![ttgo preamle len](./resources/img/ttgo_preamble_len_settings.png)
+
+Symbol time for LORA 1200 is 4.1 ms, and for LORA 300 is 32.77 ms.  
+Ex.: if you configured uDigi with fixed rx sampling interval of 350 ms, you should set TX preamble len on your tracker to 11 symbols for LORA 300, or 86 symbols for LORA 1200.
+
 <div id="multi_rx"></div>  
 
 ## Multiple Frequency Listening
@@ -58,7 +70,7 @@ You can adjust the ratio of listened frequencies using the **Rx PSC** settings.
 
 <div id="power_measurements"></div>  
 
-## Power consumption Measurements
+## Power consumption measurements
 Measurements was taken with digi settings:
 * **RX interval MAX**  = 350
 * **RX interval MIN**  = 350
@@ -68,6 +80,6 @@ Tested under 3.5 V input voltage.
 ### Sleep current
 ![Sleep current](./resources/img/pp_sleep.png)
 
-### Average rx current
+### Average digi current in rx
 ![Average rx current](./resources/img/pp_350_rx.png)
 
