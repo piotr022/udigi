@@ -6,6 +6,7 @@
 4. [Alarms configuration](./docs/alarms_settings.md)
 5. [Software update](./docs/software_update.md)
 6. [Battery life estimations](./docs/battery_life_estimations.md)
+7. [Lnode mesh network](./docs/lnode_network.md)
 
 #
 
