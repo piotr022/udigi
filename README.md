@@ -9,6 +9,8 @@
 7. [Lnode mesh network](./docs/lnode_network.md)
 
 #
+Download configurator / uDigi firmware binary: https://github.com/piotr022/udigi/releases/latest
+#
 
 ![udigi photo](./docs/resources/img/udigi_photo.png)
 ![udigi current](./docs/resources/img/udigi-current.png)
